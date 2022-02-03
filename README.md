@@ -17,7 +17,7 @@ from tfhub_esrgan_wrapper import ESRGAN, save_image
 And call the hub evaluation function:
 ```
 esrgan = ESRGAN()
-stylehub.load_image("input.jpg")
+esrgan.load_image("input.jpg")
 highres_image = esrgan.evaluate(False)
 save_image(highres_image, "output.jpg")
 ```
